@@ -1,0 +1,89 @@
+.board {
+    border: 1px solid #666;
+    background-color: #444;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.board--current {
+    box-shadow: #3c78c0 0 0 10px;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.ship-to-place {
+    margin-bottom: 1rem
+}
+
+.row,
+.cell {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell {
+    width: 2rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    border: solid 2px #444;
+    background-color: #666;
+    font-size: 2rem;
+}
+
+.board--current .cell--water,
+.cell--miss {
+    background-color: #3c78c0;
+}
+
+.board--current .cell--ship,
+.ship-to-place .cell--ship,
+.cell--hit {
+    background-color: #c13c62;
+}
+
+.cell::after {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.cell--miss::after {
+    content: '🌊';
+}
+
+.cell--hit::after {
+    content: '💥';
+}
+
+.board--shipPhase.board--current .cell--water,
+.board--shipPhase.board--current .cell--ship,
+.board--shootPhase:not(.board--current) .cell--water,
+.board--shootPhase:not(.board--current) .cell--ship {
+    cursor: pointer;
+}
+
+.board--shipPhase.board--current .cell--water:hover {
+    border-color: #c13c62;
+}
+
+.board--shipPhase.board--current .cell--ship:hover {
+    border-color: #3c78c0;
+}
+
+.board--shootPhase:not(.board--current) .cell--water:hover,
+.board--shootPhase:not(.board--current) .cell--ship:hover {
+    border-color: lightgray;
+}
+
+.board--shootPhase:not(.board--current) .cell--water:hover::after,
+.board--shootPhase:not(.board--current) .cell--ship:hover::after {
+    content: '🎯';
+}

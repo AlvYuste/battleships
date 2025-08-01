@@ -1,0 +1,24 @@
+.boardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem
+}
+
+.boardContainer {
+  width: 24rem;
+}
+
+.title {
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
+}
+
+.error {
+  color: #c13c62;
+  margin-bottom: 1rem;
+}
+
+.status {
+  margin-top: 1rem;
+}
