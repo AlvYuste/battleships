@@ -1,6 +1,6 @@
-# 🛥️ Battleships Game
+# 🛥️ Battleship Game
 
-A classic battleships game built with React, TypeScript, and Vite to explore state/reducer management and 2D map navigation algorithms. Players take turns placing their ships and then trying to sink each other's fleet in this turn-based strategy game.
+A classic battleship game built with React, TypeScript, and Vite to explore state/reducer management and 2D map navigation algorithms. Players take turns placing their ships and then trying to sink each other's fleet in this turn-based strategy game.
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ A classic battleships game built with React, TypeScript, and Vite to explore sta
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd battleships
+cd battleship
 ```
 
 2. Install dependencies:

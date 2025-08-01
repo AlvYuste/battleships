@@ -10,7 +10,7 @@ const Game: React.FC = () => {
   const [state, dispatch] = useReducer(gameReducerFunction, initialGameState);
   return (
     <div>
-      <h1 className={styles.title}>Battleships</h1>
+      <h1 className={styles.title}>Battleship</h1>
       {state.phase === INIT_PHASE && (
         <div>
           <ol>
