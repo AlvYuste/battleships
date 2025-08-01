@@ -2,7 +2,7 @@
 
 A classic battleship game built with React, TypeScript, and Vite to explore state/reducer management and 2D map navigation algorithms. Players take turns placing their ships and then trying to sink each other's fleet in this turn-based strategy game.
 
-<img width="1390" height="982" alt="Captura de pantalla 2025-08-01 095314" src="https://github.com/user-attachments/assets/99b835c6-467c-4254-9371-495238a5a806" />
+<img width="1308" height="937" alt="image" src="https://github.com/user-attachments/assets/29332038-cf90-4c8d-bdaf-b5f4909c9f44" />
 
 ## 🚀 Getting Started
 
